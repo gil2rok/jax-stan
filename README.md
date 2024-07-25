@@ -1,6 +1,6 @@
-Use your Stan models in JAX via the [BridgeStan](https://github.com/roualdes/bridgestan) library to perform Bayesian inference: run multiple chains in parallel with your favorite sampling algorithm.
-
 # Stan + JAX = :heart:
+
+Use your Stan models in JAX via the [BridgeStan](https://github.com/roualdes/bridgestan) library to run multiple chains in parallel with your favorite sampling algorithm.
 
 This code provides a minimal example that handles common gotchas and clean design patterns including: 
 - BridgeStan model wrapper (`posteriors.py`)
