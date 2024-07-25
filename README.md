@@ -7,7 +7,7 @@ Capable of running multiple chains in parallel (thanks JAX!) with your favorite 
 ## Overview
 
 This code provides a minimal example that handles common gotchas and clean design patterns including: 
-- BridgeStan model wrapper (`posteriors.py`)
+- BridgeStan model wrapper (`posterior.py`)
 - Registering BridgeStan gradients as custom Jacobian-vector-products in JAX -- this is the complex part
 - `jit` the sampling step
 - `pmap` over multiple cores for parallel sampling, on both CPU and GPU devices (`utils.py`)
