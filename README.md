@@ -2,9 +2,7 @@
 
 Use your Stan models in JAX via the [BridgeStan](https://github.com/roualdes/bridgestan) library to perform Bayesian inference.
 
-Run multiple chains :chains: in parallel with your favorite sampling algorithm. 
-
-Never leave JAX again when using Stan.
+Run multiple chains :chains: in parallel with your favorite sampling algorithm. Never leave JAX again.
 
 ## Overview
 
