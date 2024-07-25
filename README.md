@@ -1,12 +1,12 @@
 # Stan + JAX = :heart:
 
-Use your Stan models in JAX via the [BridgeStan](https://github.com/roualdes/bridgestan) library to perform Bayesian inference with your favorite sampling algorithms.
+Use your Stan models in JAX via the [BridgeStan](https://github.com/roualdes/bridgestan) library to perform Bayesian inference with your favorite sampling algorithms in parallel.
 
 This code provides a minimal example that handles common gotchas and clean design patterns including: 
-- BridgeStan model wrapper
+- BridgeStan model wrapper (`posteriors.py`)
 - Registering BridgeStan gradients as custom Jacobian-vector-products in JAX -- this is the complex part
 - `jit` the sampling step
-- `pmap` over multiple cores for parallel sampling, with utilities to handle both CPU and GPU devices
+- `pmap` over multiple cores for parallel sampling, with utilities to handle both CPU and GPU devices (`utils.py`)
 - Compiling the Stan model with the `STAN_THREADS=True` flag to enable (CPU) parallelism
 - JAX defaults to 32-bit precision while Stan defaults to 64-bit precision
 
