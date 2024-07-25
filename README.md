@@ -10,7 +10,7 @@ This code provides a minimal example that handles common gotchas and clean desig
 - BridgeStan model wrapper (`posteriors.py`)
 - Registering BridgeStan gradients as custom Jacobian-vector-products in JAX -- this is the complex part
 - `jit` the sampling step
-- `pmap` over multiple cores for parallel sampling, with utilities to handle both CPU and GPU devices (`utils.py`)
+- `pmap` over multiple cores for parallel sampling, on both CPU and GPU devices (`utils.py`)
 - Compiling the Stan model with the `STAN_THREADS=True` flag to enable (CPU) parallelism
 - JAX defaults to 32-bit precision while Stan defaults to 64-bit precision
 
