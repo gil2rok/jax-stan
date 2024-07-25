@@ -15,7 +15,7 @@ This code provides a minimal example that handles common gotchas and clean desig
 - JAX defaults to 32-bit precision while Stan defaults to 64-bit precision
 
 > [!CAUTION]
-> Automatic differentiation is performed by Stan on CPUs and then accessed by JAX via BridgeStan. This means **sampling with JAX on GPUs is slow because gradients are still computed on CPUs**. For fast JAX sampling on GPUs consider [NumPyro](https://github.com/pyro-ppl/numpyro) and [Blackjax](https://github.com/blackjax-devs/blackjax) libraries.
+> Automatic differentiation is performed by Stan on CPUs and then accessed by JAX via BridgeStan. This means **sampling with JAX on GPUs is slow because gradients are still computed on CPUs**. For fast JAX sampling on GPUs consider [NumPyro](https://github.com/pyro-ppl/numpyro) and [Blackjax](https://github.com/blackjax-devs/blackjax) libraries that compute gradients via JAX directly.
 
 See [JAX's tutorial](https://jax.readthedocs.io/en/latest/notebooks/Custom_derivative_rules_for_Python_code.html#) on custom derivative rules for more information.
 
